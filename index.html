@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TV Diabrasil - Diadema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* TOPO */
+        header {
+            background-color: #b30000;
+            color: white;
+            padding: 15px;
+        }
+
+        header img {
+            height: 80px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline-block;
+            margin: 0 0 0 15px;
+            font-size: 28px;
+            vertical-align: middle;
+        }
+
+        /* MENU */
+        nav {
+            background-color: #800000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 12px 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #a00000;
+        }
+
+        /* CONTEÚDO */
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 3px solid #b30000;
+            padding-bottom: 5px;
+            color: #b30000;
+        }
+
+        /* NOTÍCIAS */
+        .noticia {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .noticia h3 {
+            margin: 0;
+        }
+
+        /* PROGRAMAÇÃO */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        /* PROGRAMAS */
+        .programa {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* RODAPÉ */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVO SIMPLES */
+        @media (max-width: 700px) {
+            nav ul li {
+                float: none;
+            }
+
+            header h1 {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- LOGOTIPO -->
+    <img src="logo.png" alt="Logotipo da TV Diabrasil">
+    <h1>TV Diabrasil</h1>
+    <p>Diadema - São Paulo</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#programacao">Programação</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- INÍCIO -->
+    <section id="home">
+        <h2>Bem-vindo à TV Diabrasil</h2>
+        <p>
+            A TV Diabrasil é uma emissora comunitária de Diadema, levando informação,
+            cultura, entretenimento e cidadania para a população.
+        </p>
+        <p>
+            <!-- Você pode editar esse texto -->
+            Aqui você pode acompanhar nossa programação, notícias locais e conhecer nossos programas.
+        </p>
+    </section>
+
+    <!-- PROGRAMAÇÃO -->
+    <section id="programacao">
+        <h2>Programação</h2>
+
+        <!-- VOCÊ VAI EDITAR -->
+        <table>
+            <tr>
+                <th>Horário</th>
+                <th>Programa</th>
+            </tr>
+            <tr>
+                <td>08:00</td>
+                <td>Programa a definir</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>Programa a definir</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Programa a definir</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- NOTÍCIAS -->
+    <section id="noticias">
+        <h2>Notícias</h2>
+
+        <!-- NOTÍCIA 1 -->
+        <div class="noticia">
+            <h3>Título da notícia</h3>
+            <p>Resumo da notícia. Você vai editar esse conteúdo.</p>
+        </div>
+
+        <!-- NOTÍCIA 2 -->
+        <div class="noticia">
+            <h3>Título da notícia</h3>
+            <p>Resumo da notícia. Você vai editar esse conteúdo.</p>
+        </div>
+    </section>
+
+    <!-- PROGRAMAS -->
+    <section id="programas">
+        <h2>Nossos Programas</h2>
+
+        <div class="programa">
+            <h3>Nome do Programa</h3>
+            <p>Descrição do programa.</p>
+            <p><strong>Horário:</strong> A definir</p>
+        </div>
+
+        <div class="programa">
+            <h3>Nome do Programa</h3>
+            <p>Descrição do programa.</p>
+            <p><strong>Horário:</strong> A definir</p>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@tvdiabrasil.com.br</p>
+        <p>Telefone: (11) 0000-0000</p>
+        <p>Endereço: Diadema - SP</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2016 - TV Diabrasil - Diadema</p>
+    <p>Emissora Comunitária</p>
+</footer>
+
+</body>
+</html>
